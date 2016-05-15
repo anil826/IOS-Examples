@@ -15,4 +15,7 @@ int main(int argc, const char * argv[]) {
     float cTemp = (fTemp -32) / 1.8;
     printf("%f.1f degree celsius " , cTemp + 1);
     return 0;
+    
+    // Int value
+
 }

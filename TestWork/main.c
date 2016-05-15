@@ -7,15 +7,24 @@
 //
 
 #include <stdio.h>
-
+#include <math.h>
+#include <float.h>
+#include <stdbool.h>
 int main(int argc, const char * argv[]) {
-    float fTemp;
-    printf("Enter the Temp in F: ");
-    scanf("%f", &fTemp);
-    float cTemp = (fTemp -32) / 1.8;
-    printf("%f.1f degree celsius " , cTemp + 1);
-    return 0;
+    int age =  12;
+    if(age <=6){
+        printf("You re in Kindra \n");
+    }else if(age <=13){
+        printf("you are Eleme \n");
+        
+    }else{
+        printf("you are in HIGH \n");
+    }
     
-    // Int value
-
+    bool isEle = ((age >=12) || (age <=13));
+    printf("Hello Elementry %d\n",isEle);
+    printf("Hello Elementry %d\n",(!true));
+    
+    bool isHigh = (age > 13) ? 1 : 0;
+    printf("High school %d\n:" ,isHigh);
 }
